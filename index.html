@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown — Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for Countdown, a premium countdown app for iOS. Your countdown data stays on your device — developers cannot access it.">
+    <link rel="alternate" hreflang="en" href="https://mikeastwood.github.io/countdown-privacy/">
+    <link rel="alternate" hreflang="es" href="https://mikeastwood.github.io/countdown-privacy/">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-alt: #fff8f0;
+            --text: #1a1a2e;
+            --text-secondary: #555;
+            --accent: #FF9500;
+            --accent-dark: #E08600;
+            --border: #ffe0b2;
+            --card-bg: #fff3e0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0a0a1a;
+                --bg-alt: #1a1008;
+                --text: #e0e0e0;
+                --text-secondary: #a0a0a0;
+                --accent: #FF9500;
+                --accent-dark: #FFB347;
+                --border: #4a3000;
+                --card-bg: #1f1500;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 2rem 0 1.5rem;
+            border-bottom: 2px solid var(--accent);
+            margin-bottom: 2rem;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--accent-dark);
+            letter-spacing: -0.5px;
+        }
+
+        header h1 {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+        }
+
+        .updated {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        /* Language toggle */
+        .lang-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .lang-btn {
+            padding: 0.4rem 1.2rem;
+            border: 2px solid var(--accent);
+            border-radius: 9999px;
+            background: transparent;
+            color: var(--accent-dark);
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn:hover {
+            background: var(--accent);
+            color: var(--bg);
+        }
+
+        .lang-btn.active {
+            background: var(--accent);
+            color: var(--bg);
+        }
+
+        /* Summary box */
+        .summary {
+            background: var(--card-bg);
+            border-left: 4px solid var(--accent);
+            padding: 1.25rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 2.5rem;
+            font-size: 0.95rem;
+        }
+
+        .summary strong {
+            color: var(--accent-dark);
+        }
+
+        /* Sections */
+        article section {
+            margin-bottom: 2rem;
+        }
+
+        article h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--accent-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        article h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        article p {
+            margin-bottom: 0.75rem;
+            color: var(--text);
+        }
+
+        article ul {
+            margin: 0.5rem 0 1rem 1.5rem;
+        }
+
+        article li {
+            margin-bottom: 0.35rem;
+        }
+
+        a {
+            color: var(--accent-dark);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .rights-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.35rem;
+            margin: 0.5rem 0 1rem;
+        }
+
+        .right-item {
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .right-item::before {
+            content: "\2713";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        footer a {
+            color: var(--accent-dark);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1rem 1rem 3rem;
+            }
+            header {
+                padding: 1.5rem 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Countdown</div>
+            <h1 id="page-title">Privacy Policy</h1>
+            <p class="updated" id="page-date">Last updated: April 7, 2026</p>
+        </header>
+
+        <nav class="lang-toggle" aria-label="Language selection">
+            <button class="lang-btn active" id="btn-en" onclick="setLang('en')" aria-label="English">English</button>
+            <button class="lang-btn" id="btn-es" onclick="setLang('es')" aria-label="Espanol">Español</button>
+        </nav>
+
+        <!-- ==================== ENGLISH ==================== -->
+        <article id="content-en" lang="en">
+            <div class="summary">
+                <strong>Your countdown data stays on your device.</strong>
+                Countdown stores all your events locally using SwiftData. Premium users can optionally sync via iCloud. There are no analytics, no advertising, and no third-party tracking.
+            </div>
+
+            <section>
+                <h2>1. Introduction</h2>
+                <p>Countdown is a premium countdown app for iOS designed with privacy as a core principle. The app works 100% offline, stores your data locally on your device, and only syncs data to your private iCloud account if you are a premium subscriber with iCloud enabled. This privacy policy explains what data the app stores, how it is stored, and your rights regarding that data.</p>
+            </section>
+
+            <section>
+                <h2>2. What Data We Store</h2>
+                <p>Countdown stores the following data that you create and generate through normal use of the app:</p>
+                <ul>
+                    <li><strong>Countdowns:</strong> Title, target date, notes, display format, theme, pin/archive status, repeat rule, creation and update dates.</li>
+                    <li><strong>Categories:</strong> Name, icon, color, sort order.</li>
+                    <li><strong>Background images:</strong> Custom images you assign to countdowns, stored as data on-device.</li>
+                    <li><strong>Notification preferences:</strong> Per-countdown reminder offsets and global notification frequency.</li>
+                    <li><strong>App preferences:</strong> Theme, accent color, display format defaults, premium status.</li>
+                </ul>
+                <p>All of this data is created by you through your use of the app. Countdown does not collect data from external sources or third parties.</p>
+            </section>
+
+            <section>
+                <h2>3. How Data Is Stored</h2>
+                <p>Your countdown data is stored in two places:</p>
+                <ul>
+                    <li><strong>Locally on your device</strong> using Apple's SwiftData framework. This data is available even when you have no internet connection.</li>
+                    <li><strong>In your private iCloud account</strong> (premium feature) via Apple's CloudKit service, enabling sync across all your Apple devices signed into the same Apple ID.</li>
+                </ul>
+                <p>Free users' data is stored exclusively on-device. No data leaves the device unless you are a premium subscriber with iCloud enabled.</p>
+            </section>
+
+            <section>
+                <h2>4. CloudKit and iCloud (Premium)</h2>
+                <p>Premium subscribers with iCloud enabled on their device have their data synced to Apple's CloudKit servers. Important details:</p>
+                <ul>
+                    <li><strong>Private Database:</strong> All your countdowns, categories, and preferences are stored in your private CloudKit database. Only you can access it.</li>
+                    <li><strong>Shared Database:</strong> If you use the shared countdowns feature, only the specific countdowns you choose to share are accessible to the people you invite via CKShare. <strong>Your other countdowns, categories, and preferences are never shared.</strong></li>
+                    <li>Data is <strong>encrypted in transit and at rest</strong> by Apple.</li>
+                    <li>The developers of Countdown <strong>cannot read, access, or view</strong> your private countdown data.</li>
+                    <li>Apple's infrastructure handles all data storage and encryption. Apple's own privacy policy applies: <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">apple.com/privacy</a></li>
+                </ul>
+                <p>If you disable iCloud for Countdown or are on the free tier, no data leaves your device.</p>
+            </section>
+
+            <section>
+                <h2>5. Calendar and Reminders Integration</h2>
+                <p>Countdown can optionally import events from your Apple Calendar and Apple Reminders to create countdowns. Important details:</p>
+                <ul>
+                    <li>Countdown requests <strong>read-only</strong> access to your Calendar and Reminders. It never creates, modifies, or deletes your calendar events or reminders.</li>
+                    <li>Permissions are requested <strong>only</strong> when you choose to import events or reminders.</li>
+                    <li><strong>Only the event title and date are imported</strong> to create a countdown. No attendees, locations, or other event metadata are stored.</li>
+                    <li>A source identifier is stored to avoid duplicate imports, but <strong>no ongoing sync</strong> occurs — the import is a one-time operation.</li>
+                    <li>Calendar and Reminders integration is entirely optional. The app works fully without it.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>6. Notifications</h2>
+                <p>Countdown uses local notifications to remind you about upcoming events. Important details:</p>
+                <ul>
+                    <li>All notifications are <strong>scheduled locally on your device</strong> using Apple's UserNotifications framework.</li>
+                    <li>No push notification server is used. No tokens are sent to any server.</li>
+                    <li>Notification content (countdown title and time remaining) stays on your device.</li>
+                    <li>You can disable notifications at any time in your device's Settings or within the app.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>7. In-App Purchases</h2>
+                <p>Countdown offers a one-time premium purchase through Apple's StoreKit framework. Important details:</p>
+                <ul>
+                    <li>All purchase processing is handled by Apple. The developer does not receive or store your payment information.</li>
+                    <li>A boolean flag indicating premium status is stored locally on your device.</li>
+                    <li>Purchase receipts are validated through Apple's on-device verification. No receipt data is sent to developer-controlled servers.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>8. Local-Only Settings</h2>
+                <p>The following preferences are stored locally on your device using UserDefaults and are <strong>not synced via CloudKit</strong>:</p>
+                <ul>
+                    <li>Default display format</li>
+                    <li>Default theme and accent color</li>
+                    <li>Notification frequency</li>
+                    <li>Premium unlock status</li>
+                </ul>
+                <p>These settings remain on the device where they were configured.</p>
+            </section>
+
+            <section>
+                <h2>9. What We Do Not Collect</h2>
+                <p>Countdown does <strong>not</strong> use or include:</p>
+                <ul>
+                    <li>Analytics SDKs (no Firebase, no Mixpanel, no Google Analytics)</li>
+                    <li>Crash reporting SDKs (no Crashlytics, no Sentry)</li>
+                    <li>Advertising frameworks or identifiers</li>
+                    <li>Location services</li>
+                    <li>Access to contacts or photos (beyond background images you explicitly choose)</li>
+                    <li>Third-party data sharing of any kind</li>
+                    <li>Cross-app or cross-site tracking</li>
+                    <li>Apple Health or HealthKit</li>
+                </ul>
+                <p>No data is sent to any server other than Apple's iCloud infrastructure for the sole purpose of syncing your data across your devices (premium feature only).</p>
+            </section>
+
+            <section>
+                <h2>10. Data Deletion</h2>
+                <p>You have full control over your data:</p>
+                <ul>
+                    <li><strong>Delete individual countdowns</strong> directly within the app. Deletions sync across all your devices if iCloud is enabled.</li>
+                    <li><strong>Delete categories</strong> within the app. Countdowns in that category are preserved but uncategorized.</li>
+                    <li><strong>Uninstalling the app</strong> removes all local data from that device. iCloud data persists in your iCloud account until you manually delete it through iCloud settings.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>11. Children's Privacy</h2>
+                <p>Countdown is rated 4+ and is suitable for users of all ages. The app does not require accounts or registration. Shared countdown features (premium) are by invitation only and do not expose personal information. There is no special data collection for children.</p>
+            </section>
+
+            <section>
+                <h2>12. Your Rights by Jurisdiction</h2>
+
+                <h3>European Union / EEA (GDPR)</h3>
+                <p>Your data is processed on-device and, for premium users, synced through Apple's CloudKit to your private iCloud container. The developer does not have server-side access to your data.</p>
+                <p><strong>Data controller:</strong> Mike Pulgar Olguin, individual developer, Spain.</p>
+                <p><strong>Legal basis:</strong> Legitimate interest (app functionality). No personal data is transmitted to or processed by the developer.</p>
+                <p><strong>Your rights under GDPR:</strong></p>
+                <div class="rights-grid">
+                    <div class="right-item">Right of access to your data (exercised directly on your device)</div>
+                    <div class="right-item">Right to rectification (edit your data within the app)</div>
+                    <div class="right-item">Right to erasure (delete countdowns or uninstall the app)</div>
+                    <div class="right-item">Right to data portability</div>
+                    <div class="right-item">Right to object to processing</div>
+                    <div class="right-item">Right to restriction of processing</div>
+                </div>
+                <p>To exercise any right, contact: <a href="mailto:michael@mikeastwood.com">michael@mikeastwood.com</a></p>
+                <p><strong>Supervisory authority:</strong> You have the right to lodge a complaint with the <a href="https://www.aepd.es" target="_blank" rel="noopener">Agencia Española de Protección de Datos (AEPD)</a>, C/ Jorge Juan, 6, 28001 Madrid, Spain.</p>
+                <p><strong>International transfers:</strong> No personal data is transferred outside your device. If iCloud sync is enabled (premium), Apple manages transfers under its own Standard Contractual Clauses (SCCs).</p>
+                <p><strong>Data retention:</strong> Data is retained on your device for as long as the app is installed. Deletion is immediate when you delete countdowns or uninstall the app.</p>
+
+                <h3>United Kingdom (UK GDPR)</h3>
+                <p>UK residents have the same rights as listed above under GDPR. The relevant supervisory authority is the <a href="https://ico.org.uk" target="_blank" rel="noopener">Information Commissioner's Office (ICO)</a>, Wycliffe House, Water Lane, Wilmslow, SK9 5AF, United Kingdom.</p>
+
+                <h3>California, USA (CCPA/CPRA)</h3>
+                <p>Under the California Consumer Privacy Act:</p>
+                <ul>
+                    <li>We do <strong>not sell</strong> personal information.</li>
+                    <li>We do <strong>not share</strong> personal information for cross-context behavioral advertising.</li>
+                    <li>We do <strong>not use or disclose</strong> sensitive personal information for purposes beyond those authorized by the CCPA.</li>
+                    <li>Categories of personal information collected: <strong>None.</strong></li>
+                </ul>
+                <p>California residents have the right to know, delete, and opt-out of the sale of personal information. Since we collect no data, these rights are inherently fulfilled.</p>
+
+                <h3>Brazil (LGPD)</h3>
+                <p>Brazilian residents have rights to confirmation, access, correction, anonymization, deletion, and portability of personal data. Since no personal data is collected or processed by the developer, these rights are inherently fulfilled.</p>
+
+                <h3>Canada (PIPEDA)</h3>
+                <p>Canadian residents are protected under the Personal Information Protection and Electronic Documents Act. Countdown complies with PIPEDA's fair information principles: no personal information is collected, and the purpose of on-device data storage is solely for app functionality.</p>
+
+                <h3>South Africa (POPIA)</h3>
+                <p>South African residents may contact the <a href="https://inforegulator.org.za" target="_blank" rel="noopener">Information Regulator</a> for privacy concerns. No personal information is processed by the developer.</p>
+
+                <h3>Japan (APPI)</h3>
+                <p>No personal information is acquired, used, or provided to third parties by the developer. All data processing occurs exclusively on the user's device.</p>
+            </section>
+
+            <section>
+                <h2>13. Changes to This Policy</h2>
+                <p>If this privacy policy is updated, the revised version will be published at this URL and included in a future app update. The "Last updated" date at the top will reflect the change. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+            </section>
+
+            <section>
+                <h2>14. Contact</h2>
+                <p>If you have questions about this privacy policy or wish to exercise your data rights:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:michael@mikeastwood.com">michael@mikeastwood.com</a></li>
+                </ul>
+                <p>Developer: Mike Pulgar Olguin (individual developer), Spain.</p>
+            </section>
+        </article>
+
+        <!-- ==================== SPANISH ==================== -->
+        <article id="content-es" lang="es" class="hidden">
+            <div class="summary">
+                <strong>Tus datos de cuenta regresiva permanecen en tu dispositivo.</strong>
+                Countdown almacena todos tus eventos localmente usando SwiftData. Los usuarios premium pueden opcionalmente sincronizar via iCloud. No hay analitica, ni publicidad, ni rastreo de terceros.
+            </div>
+
+            <section>
+                <h2>1. Introduccion</h2>
+                <p>Countdown es una app premium de cuenta regresiva para iOS disenada con la privacidad como principio fundamental. La app funciona 100% sin conexion, almacena tus datos localmente en tu dispositivo, y solo sincroniza datos con tu cuenta privada de iCloud si eres suscriptor premium con iCloud habilitado. Esta politica de privacidad explica que datos almacena la app, como se almacenan y tus derechos sobre ellos.</p>
+            </section>
+
+            <section>
+                <h2>2. Que datos almacenamos</h2>
+                <p>Countdown almacena los siguientes datos que tu creas y generas mediante el uso normal de la app:</p>
+                <ul>
+                    <li><strong>Cuentas regresivas:</strong> Titulo, fecha objetivo, notas, formato de visualizacion, tema, estado de fijado/archivado, regla de repeticion, fechas de creacion y actualizacion.</li>
+                    <li><strong>Categorias:</strong> Nombre, icono, color, orden.</li>
+                    <li><strong>Imagenes de fondo:</strong> Imagenes personalizadas que asignas a las cuentas regresivas, almacenadas como datos en el dispositivo.</li>
+                    <li><strong>Preferencias de notificacion:</strong> Desplazamientos de recordatorio por cuenta regresiva y frecuencia de notificacion global.</li>
+                    <li><strong>Preferencias de la app:</strong> Tema, color de acento, formato de visualizacion predeterminado, estado premium.</li>
+                </ul>
+                <p>Todos estos datos son creados por ti mediante tu uso de la app. Countdown no recopila datos de fuentes externas ni de terceros.</p>
+            </section>
+
+            <section>
+                <h2>3. Como se almacenan los datos</h2>
+                <p>Tus datos de cuenta regresiva se almacenan en dos lugares:</p>
+                <ul>
+                    <li><strong>Localmente en tu dispositivo</strong> usando el framework SwiftData de Apple. Estos datos estan disponibles incluso sin conexion a internet.</li>
+                    <li><strong>En tu cuenta privada de iCloud</strong> (funcion premium) via el servicio CloudKit de Apple, permitiendo sincronizacion entre todos tus dispositivos Apple con el mismo Apple ID.</li>
+                </ul>
+                <p>Los datos de los usuarios gratuitos se almacenan exclusivamente en el dispositivo. Ningun dato sale del dispositivo a menos que seas suscriptor premium con iCloud habilitado.</p>
+            </section>
+
+            <section>
+                <h2>4. CloudKit e iCloud (Premium)</h2>
+                <p>Los suscriptores premium con iCloud habilitado en su dispositivo tienen sus datos sincronizados con los servidores CloudKit de Apple. Detalles importantes:</p>
+                <ul>
+                    <li><strong>Base de datos privada:</strong> Todas tus cuentas regresivas, categorias y preferencias se almacenan en tu base de datos privada de CloudKit. Solo tu puedes acceder a ellos.</li>
+                    <li><strong>Base de datos compartida:</strong> Si usas la funcion de cuentas regresivas compartidas, solo las cuentas regresivas especificas que elijas compartir son accesibles para las personas que invites via CKShare. <strong>Tus otras cuentas regresivas, categorias y preferencias nunca se comparten.</strong></li>
+                    <li>Los datos estan <strong>cifrados en transito y en reposo</strong> por Apple.</li>
+                    <li>Los desarrolladores de Countdown <strong>no pueden leer, acceder ni ver</strong> tus datos privados de cuentas regresivas.</li>
+                    <li>La infraestructura de Apple maneja todo el almacenamiento y cifrado. La politica de privacidad de Apple aplica: <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">apple.com/privacy</a></li>
+                </ul>
+                <p>Si desactivas iCloud para Countdown o estas en el plan gratuito, ningun dato sale de tu dispositivo.</p>
+            </section>
+
+            <section>
+                <h2>5. Integracion con Calendario y Recordatorios</h2>
+                <p>Countdown puede importar eventos de tu Calendario de Apple y Recordatorios de Apple de forma opcional para crear cuentas regresivas. Detalles importantes:</p>
+                <ul>
+                    <li>Countdown solicita acceso de <strong>solo lectura</strong> a tu Calendario y Recordatorios. Nunca crea, modifica ni elimina tus eventos de calendario ni recordatorios.</li>
+                    <li>Los permisos se solicitan <strong>unicamente</strong> cuando eliges importar eventos o recordatorios.</li>
+                    <li><strong>Solo se importan el titulo y la fecha del evento</strong> para crear una cuenta regresiva. No se almacenan asistentes, ubicaciones ni otros metadatos del evento.</li>
+                    <li>Se almacena un identificador de origen para evitar importaciones duplicadas, pero <strong>no hay sincronizacion continua</strong> — la importacion es una operacion unica.</li>
+                    <li>La integracion con Calendario y Recordatorios es completamente opcional. La app funciona completamente sin ella.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>6. Notificaciones</h2>
+                <p>Countdown usa notificaciones locales para recordarte sobre eventos proximos. Detalles importantes:</p>
+                <ul>
+                    <li>Todas las notificaciones se <strong>programan localmente en tu dispositivo</strong> usando el framework UserNotifications de Apple.</li>
+                    <li>No se usa ningun servidor de notificaciones push. No se envian tokens a ningun servidor.</li>
+                    <li>El contenido de las notificaciones (titulo de la cuenta regresiva y tiempo restante) permanece en tu dispositivo.</li>
+                    <li>Puedes desactivar las notificaciones en cualquier momento en los Ajustes de tu dispositivo o dentro de la app.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>7. Compras dentro de la app</h2>
+                <p>Countdown ofrece una compra premium unica a traves del framework StoreKit de Apple. Detalles importantes:</p>
+                <ul>
+                    <li>Todo el procesamiento de compras es manejado por Apple. El desarrollador no recibe ni almacena tu informacion de pago.</li>
+                    <li>Un indicador booleano del estado premium se almacena localmente en tu dispositivo.</li>
+                    <li>Los recibos de compra se validan mediante la verificacion en el dispositivo de Apple. No se envian datos de recibos a servidores controlados por el desarrollador.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>8. Configuraciones solo locales</h2>
+                <p>Las siguientes preferencias se almacenan localmente en tu dispositivo usando UserDefaults y <strong>no se sincronizan via CloudKit</strong>:</p>
+                <ul>
+                    <li>Formato de visualizacion predeterminado</li>
+                    <li>Tema y color de acento predeterminados</li>
+                    <li>Frecuencia de notificaciones</li>
+                    <li>Estado de desbloqueo premium</li>
+                </ul>
+                <p>Estas configuraciones permanecen en el dispositivo donde fueron configuradas.</p>
+            </section>
+
+            <section>
+                <h2>9. Que no recopilamos</h2>
+                <p>Countdown <strong>no</strong> usa ni incluye:</p>
+                <ul>
+                    <li>SDKs de analiticas (no Firebase, no Mixpanel, no Google Analytics)</li>
+                    <li>SDKs de reportes de errores (no Crashlytics, no Sentry)</li>
+                    <li>Frameworks de publicidad ni identificadores</li>
+                    <li>Servicios de ubicacion</li>
+                    <li>Acceso a contactos o fotos (mas alla de las imagenes de fondo que elijas explicitamente)</li>
+                    <li>Comparticion de datos con terceros de ningun tipo</li>
+                    <li>Rastreo entre apps o entre sitios web</li>
+                    <li>Apple Health o HealthKit</li>
+                </ul>
+                <p>Ningun dato se envia a ningun servidor que no sea la infraestructura de iCloud de Apple con el unico proposito de sincronizar tus datos entre tus dispositivos (solo funcion premium).</p>
+            </section>
+
+            <section>
+                <h2>10. Eliminacion de datos</h2>
+                <p>Tienes control total sobre tus datos:</p>
+                <ul>
+                    <li><strong>Eliminar cuentas regresivas individuales</strong> directamente dentro de la app. Las eliminaciones se sincronizan entre todos tus dispositivos si iCloud esta habilitado.</li>
+                    <li><strong>Eliminar categorias</strong> dentro de la app. Las cuentas regresivas en esa categoria se conservan pero sin categoria.</li>
+                    <li><strong>Desinstalar la app</strong> elimina todos los datos locales de ese dispositivo. Los datos de iCloud persisten en tu cuenta de iCloud hasta que los elimines manualmente desde los ajustes de iCloud.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>11. Privacidad de menores</h2>
+                <p>Countdown esta clasificada para 4+ y es apta para usuarios de todas las edades. La app no requiere cuentas ni registro. Las funciones de cuentas regresivas compartidas (premium) son solo por invitacion y no exponen informacion personal. No hay recopilacion especial de datos para menores.</p>
+            </section>
+
+            <section>
+                <h2>12. Tus derechos por jurisdiccion</h2>
+
+                <h3>Union Europea / EEE (RGPD)</h3>
+                <p>Tus datos se procesan en el dispositivo y, para usuarios premium, se sincronizan a traves de CloudKit de Apple a tu contenedor privado de iCloud. El desarrollador no tiene acceso del lado del servidor a tus datos.</p>
+                <p><strong>Responsable del tratamiento:</strong> Mike Pulgar Olguin, desarrollador independiente, Espana.</p>
+                <p><strong>Base legal:</strong> Interes legitimo (funcionalidad de la app). Ningun dato personal es transmitido al ni procesado por el desarrollador.</p>
+                <p><strong>Tus derechos bajo el RGPD:</strong></p>
+                <div class="rights-grid">
+                    <div class="right-item">Derecho de acceso a tus datos (ejercido directamente en tu dispositivo)</div>
+                    <div class="right-item">Derecho de rectificacion (edita tus datos dentro de la app)</div>
+                    <div class="right-item">Derecho de supresion (elimina cuentas regresivas o desinstala la app)</div>
+                    <div class="right-item">Derecho a la portabilidad de datos</div>
+                    <div class="right-item">Derecho de oposicion al tratamiento</div>
+                    <div class="right-item">Derecho a la limitacion del tratamiento</div>
+                </div>
+                <p>Para ejercer cualquier derecho, contacta: <a href="mailto:michael@mikeastwood.com">michael@mikeastwood.com</a></p>
+                <p><strong>Autoridad de control:</strong> Tienes derecho a presentar una reclamacion ante la <a href="https://www.aepd.es" target="_blank" rel="noopener">Agencia Espanola de Proteccion de Datos (AEPD)</a>, C/ Jorge Juan, 6, 28001 Madrid, Espana.</p>
+                <p><strong>Transferencias internacionales:</strong> No se transfieren datos personales fuera de tu dispositivo. Si la sincronizacion de iCloud esta activada (premium), Apple gestiona las transferencias bajo sus propias Clausulas Contractuales Tipo (SCCs).</p>
+                <p><strong>Retencion de datos:</strong> Los datos se conservan en tu dispositivo mientras la app este instalada. La eliminacion es inmediata al eliminar cuentas regresivas o al desinstalar la app.</p>
+
+                <h3>Reino Unido (UK GDPR)</h3>
+                <p>Los residentes del Reino Unido tienen los mismos derechos listados anteriormente bajo el RGPD. La autoridad supervisora relevante es la <a href="https://ico.org.uk" target="_blank" rel="noopener">Information Commissioner's Office (ICO)</a>, Wycliffe House, Water Lane, Wilmslow, SK9 5AF, Reino Unido.</p>
+
+                <h3>California, EEUU (CCPA/CPRA)</h3>
+                <p>Bajo la Ley de Privacidad del Consumidor de California:</p>
+                <ul>
+                    <li><strong>No vendemos</strong> informacion personal.</li>
+                    <li><strong>No compartimos</strong> informacion personal para publicidad conductual entre contextos.</li>
+                    <li><strong>No usamos ni divulgamos</strong> informacion personal sensible para propositos mas alla de los autorizados por la CCPA.</li>
+                    <li>Categorias de informacion personal recopilada: <strong>Ninguna.</strong></li>
+                </ul>
+                <p>Los residentes de California tienen derecho a saber, eliminar y optar por no participar en la venta de informacion personal. Dado que no recopilamos datos, estos derechos se cumplen inherentemente.</p>
+
+                <h3>Brasil (LGPD)</h3>
+                <p>Los residentes de Brasil tienen derechos de confirmacion, acceso, correccion, anonimizacion, eliminacion y portabilidad de datos personales. Dado que el desarrollador no recopila ni procesa datos personales, estos derechos se cumplen inherentemente.</p>
+
+                <h3>Canada (PIPEDA)</h3>
+                <p>Los residentes canadienses estan protegidos bajo la Ley de Proteccion de Informacion Personal y Documentos Electronicos. Countdown cumple con los principios de informacion justa de PIPEDA: no se recopila informacion personal, y el proposito del almacenamiento en el dispositivo es unicamente para la funcionalidad de la app.</p>
+
+                <h3>Sudafrica (POPIA)</h3>
+                <p>Los residentes sudafricanos pueden contactar al <a href="https://inforegulator.org.za" target="_blank" rel="noopener">Information Regulator</a> para consultas de privacidad. El desarrollador no procesa informacion personal.</p>
+
+                <h3>Japon (APPI)</h3>
+                <p>El desarrollador no adquiere, usa ni proporciona a terceros informacion personal. Todo el procesamiento de datos ocurre exclusivamente en el dispositivo del usuario.</p>
+            </section>
+
+            <section>
+                <h2>13. Cambios a esta politica</h2>
+                <p>Si esta politica de privacidad se actualiza, la version revisada se publicara en esta URL y se incluira en una futura actualizacion de la app. La fecha de "Ultima actualizacion" en la parte superior reflejara el cambio. El uso continuado de la app despues de los cambios constituye aceptacion de la politica actualizada.</p>
+            </section>
+
+            <section>
+                <h2>14. Contacto</h2>
+                <p>Si tienes preguntas sobre esta politica de privacidad o deseas ejercer tus derechos sobre tus datos:</p>
+                <ul>
+                    <li><strong>Correo:</strong> <a href="mailto:michael@mikeastwood.com">michael@mikeastwood.com</a></li>
+                </ul>
+                <p>Desarrollador: Mike Pulgar Olguin (desarrollador independiente), Espana.</p>
+            </section>
+        </article>
+
+        <footer>
+            <p>&copy; 2026 Mike Pulgar Olguin. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function setLang(lang) {
+            document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
+            document.getElementById('content-es').classList.toggle('hidden', lang !== 'es');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+            document.getElementById('page-title').textContent = lang === 'en' ? 'Privacy Policy' : 'Politica de Privacidad';
+            document.getElementById('page-date').textContent = lang === 'en'
+                ? 'Last updated: April 7, 2026'
+                : 'Ultima actualizacion: 7 de abril de 2026';
+            document.documentElement.lang = lang;
+        }
+
+        // Auto-detect language
+        if (navigator.language && navigator.language.startsWith('es')) {
+            setLang('es');
+        }
+    </script>
+</body>
+</html>
